@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graphmaker"
+version = "1.4.0"
+description = "GraphMaker for TGA, DSC, IR, UV-Vis, GPC, and particle-size comparison"
+requires-python = ">=3.12"
+dependencies = [
+  "openpyxl==3.1.5",
+]
+
+[project.scripts]
+graphmaker = "tga_analyzer.gui:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
