@@ -1,0 +1,33 @@
+{
+  "profile_id": "builtin-tga-fixed",
+  "name": "TGA 固定4列形式",
+  "measurement_type": "TGA",
+  "enabled": true,
+  "encoding": "auto",
+  "delimiter": "comma",
+  "file_patterns": ["*.csv"],
+  "required_keywords": ["Temperature_C", "Mass_mg"],
+  "header_mode": "auto",
+  "header_row": null,
+  "header_keyword": null,
+  "start_mode": "header_next",
+  "start_row": null,
+  "start_offset": 1,
+  "start_keyword": null,
+  "columns": {
+    "x": {"header": "Temperature_C", "column": null},
+    "y": {"header": "Mass_mg", "column": null},
+    "time": {"header": "Time_min", "column": null},
+    "record_id": {"header": "Record_ID", "column": null}
+  },
+  "units": {"x": "°C", "y": "mg", "time": "min"},
+  "end_mode": "eof",
+  "end_row": null,
+  "end_keyword": null,
+  "non_numeric_count": 1,
+  "metadata_rules": {},
+  "version": 1,
+  "created_at": "2026-08-14T00:00:00+09:00",
+  "built_in": true,
+  "skip_blank_rows": true
+}
