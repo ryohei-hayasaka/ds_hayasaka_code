@@ -1,0 +1,17 @@
+{
+  "profile_id": "builtin-ss-curve",
+  "name": "標準 SSカーブ CSV",
+  "measurement_type": "SSカーブ",
+  "encoding": "auto",
+  "delimiter": "auto",
+  "file_patterns": ["*.csv"],
+  "header_mode": "auto",
+  "start_mode": "header_next",
+  "columns": {
+    "x": {"header": "Extension_mm"},
+    "y": {"header": "Force_N"}
+  },
+  "units": {"x": "mm", "y": "N"},
+  "end_mode": "eof",
+  "built_in": true
+}

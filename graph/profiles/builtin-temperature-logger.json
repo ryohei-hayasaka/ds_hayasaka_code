@@ -1,0 +1,17 @@
+{
+  "profile_id": "builtin-temperature-logger",
+  "name": "標準 温度ロガー CSV",
+  "measurement_type": "温度ロガー",
+  "encoding": "auto",
+  "delimiter": "auto",
+  "file_patterns": ["*.csv"],
+  "header_mode": "auto",
+  "start_mode": "header_next",
+  "columns": {
+    "x": {"header": "Time_min"},
+    "y": {"header": "Temperature_C"}
+  },
+  "units": {"x": "min", "y": "°C"},
+  "end_mode": "eof",
+  "built_in": true
+}

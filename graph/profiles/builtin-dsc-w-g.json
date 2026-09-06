@@ -1,0 +1,27 @@
+{
+  "profile_id": "builtin-dsc-w-g",
+  "name": "DSC 固定形式（W/g）",
+  "measurement_type": "DSC",
+  "enabled": true,
+  "encoding": "auto",
+  "delimiter": "comma",
+  "file_patterns": ["*.csv"],
+  "required_keywords": ["Temperature_C", "HeatFlow_W_g"],
+  "header_mode": "auto",
+  "start_mode": "header_next",
+  "start_offset": 1,
+  "columns": {
+    "x": {"header": "Temperature_C", "column": null},
+    "y": {"header": "HeatFlow_W_g", "column": null},
+    "time": {"header": "Time_min", "column": null},
+    "record_id": {"header": "Record_ID", "column": null}
+  },
+  "units": {"x": "°C", "y": "W/g", "time": "min"},
+  "end_mode": "eof",
+  "non_numeric_count": 1,
+  "metadata_rules": {},
+  "version": 1,
+  "created_at": "2026-08-14T00:00:00+09:00",
+  "built_in": true,
+  "skip_blank_rows": true
+}

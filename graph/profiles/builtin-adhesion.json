@@ -1,0 +1,17 @@
+{
+  "profile_id": "builtin-adhesion",
+  "name": "標準 粘着力 CSV",
+  "measurement_type": "粘着力",
+  "encoding": "auto",
+  "delimiter": "auto",
+  "file_patterns": ["*.csv"],
+  "header_mode": "auto",
+  "start_mode": "header_next",
+  "columns": {
+    "x": {"header": "Distance_mm"},
+    "y": {"header": "Force_N"}
+  },
+  "units": {"x": "mm", "y": "N"},
+  "end_mode": "eof",
+  "built_in": true
+}
